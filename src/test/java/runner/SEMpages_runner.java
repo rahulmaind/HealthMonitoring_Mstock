@@ -22,6 +22,6 @@ import io.cucumber.testng.CucumberOptions;
 //@CucumberOptions(features="C:\\Users\\rahul.nityo\\OneDrive - Mirae Asset Capital Markets (India) Pvt. Ltd\\Desktop\\HealthMonitoring\\src\\main\\resources\\Feature\\5_trading-account.feature",
 //glue= {"step"},tags= "@DematAccountLanding",plugin= {"pretty","html:targethtml/Htmlreport"})
 
-public class runner_zero extends AbstractTestNGCucumberTests{
+public class SEMpages_runner extends AbstractTestNGCucumberTests{
 
 }
