@@ -12,7 +12,7 @@ And User should see a mStock home page.
 #Scenario: Help module funcationality
 
 #Given User is on mStock home page.
-When Click on home pahe hamburger menu.
+When Click on home page hamburger menu.
 And select the Help menu.
 
 Then Help main page should open.

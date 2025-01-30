@@ -342,7 +342,8 @@ public void pageload() throws InterruptedException {
 	 public void loadtime() {
 		 try {
 	            // URL to test
-	            String url = "https://www.mstock.com/sem-landing/trading-account";
+			 String url=driver.getCurrentUrl();
+	            //String url = "https://www.mstock.com/sem-landing/trading-account";
 
 	            // Start measuring time
 	            long startTime = System.currentTimeMillis();
