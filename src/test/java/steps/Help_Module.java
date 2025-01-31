@@ -117,39 +117,41 @@ public class Help_Module {
 	}
 
 	@When("User is on Help page and click on trade arrow button under Have a Query? section")
-	public void user_is_on_help_page_and_click_on_trade_arrow_button_under_have_a_query_section() {
-	     
+	public void user_is_on_help_page_and_click_on_trade_arrow_button_under_have_a_query_section() throws InterruptedException {
+		
+	     help.tradearrowClick();
 	     
 	}
 
 	@Then("System should navigate on trade Details page.")
 	public void system_should_navigate_on_trade_details_page() {
-	     
+	  help.Navigatetradedetailspage();   
 	     
 	}
 
 	@Then("Scroll down the page till the bottom.")
-	public void scroll_down_the_page_till_the_bottom() {
-	     
+	public void scroll_down_the_page_till_the_bottom() throws InterruptedException {
+	     help.tradedetailscrolldown();
 	     
 	}
 
 	@When("user add the input, attachment and click on Raise button.")
-	public void user_add_the_input_attachment_and_click_on_raise_button() {
-	     
+	public void user_add_the_input_attachment_and_click_on_raise_button() throws InterruptedException, AWTException {
+	     help.tradequeryTextInput();
+	     help.tradeaddAttachquery();
+         help.tradeuploaddoc();
 	     
 	}
 
 	@Then("Attachment name with delete icon should be display below input box.")
-	public void attachment_name_with_delete_icon_should_be_display_below_input_box() {
-	     
+	public void attachment_name_with_delete_icon_should_be_display_below_input_box() throws InterruptedException {
+	     help.trd_uplo_file_name();
 	     
 	}
 
 	@Then("Success pop up message should be display and verified.")
-	public void success_pop_up_message_should_be_display_and_verified() {
-	     
-	     
+	public void success_pop_up_message_should_be_display_and_verified() throws InterruptedException {
+		help.trade_querypopup1();
 	}
 
 	@Then("verify the success message pop up load time.")
@@ -159,27 +161,16 @@ public class Help_Module {
 	}
 
 	@When("user scroll down the help page till All Your Queries section.")
-	public void user_scroll_down_the_help_page_till_all_your_queries_section() {
-	     
+	public void user_scroll_down_the_help_page_till_all_your_queries_section() throws InterruptedException {
+	     help.Scroll_till_AYQ();
 	     
 	}
 
 	@Then("Verify the Queries are listed in All Your Queries section.")
 	public void verify_the_queries_are_listed_in_all_your_queries_section() {
-	     
-	     
-	}
-
-	@When("user click on View All link")
-	public void user_click_on_view_all_link() {
-	     
+		help.verifyQuery();
 	     
 	}
 
-	@Then("Page should navigate to new tab and open View all poge.")
-	public void page_should_navigate_to_new_tab_and_open_view_all_poge() {
-	     
-	     
-	}
 	
 }

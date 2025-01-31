@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-30T17:54:15 IST" name="Default suite" finished-at="2025-01-30T17:55:10 IST" duration-ms="54881">
+  <suite started-at="2025-01-31T17:18:05 IST" name="Default suite" finished-at="2025-01-31T17:19:39 IST" duration-ms="94834">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HelpModule_runner@687e99d8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HelpModule_runner@2d2ffcb7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-01-30T17:54:15 IST" name="Default test" finished-at="2025-01-30T17:55:10 IST" duration-ms="54881">
+    <test started-at="2025-01-31T17:18:05 IST" name="Default test" finished-at="2025-01-31T17:19:39 IST" duration-ms="94834">
       <class name="runner.HelpModule_runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.HelpModule_runner@687e99d8]" started-at="2025-01-30T17:54:15 IST" name="setUpClass" finished-at="2025-01-30T17:54:15 IST" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.HelpModule_runner@2d2ffcb7]" started-at="2025-01-31T17:18:05 IST" name="setUpClass" finished-at="2025-01-31T17:18:05 IST" duration-ms="320" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@30501e60]]>
+                <![CDATA[org.testng.TestRunner@5db6b845]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HelpModule_runner@687e99d8]" started-at="2025-01-30T17:54:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-30T17:55:10 IST" duration-ms="54723" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HelpModule_runner@2d2ffcb7]" started-at="2025-01-31T17:18:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-31T17:19:09 IST" duration-ms="63648" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid credentials"]]>
+                <![CDATA["Verify Have a Query module functionality"]]>
               </value>
             </param>
             <param index="1">
@@ -37,7 +37,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.HelpModule_runner@687e99d8]" started-at="2025-01-30T17:55:10 IST" name="tearDownClass" finished-at="2025-01-30T17:55:10 IST" duration-ms="2" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.HelpModule_runner@2d2ffcb7]" started-at="2025-01-31T17:19:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-31T17:19:39 IST" duration-ms="30753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Have a Query module functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login to Mstock Website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.HelpModule_runner@2d2ffcb7]" started-at="2025-01-31T17:19:39 IST" name="tearDownClass" finished-at="2025-01-31T17:19:39 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -5,7 +5,9 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.security.PublicKey;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -73,6 +75,36 @@ public class Help_module_POM {
 	
 	@FindBy(xpath="//div[@class='file-upload-filename']")
 	private WebElement filename;
+	
+	
+	@FindBy(xpath="(//a[@href='/trade-Details'])[1]")
+	private WebElement tradearrow;
+	
+	@FindBy(xpath="//textarea[@class='queryDescription']")
+	private WebElement tradequeryinputbox;
+	
+	@FindBy(xpath="//label[@for='postedFile']")
+	private WebElement tradeupload;
+	
+	@FindBy(xpath="//input[@id='btnRaise']")
+	private WebElement trdraisebtn;
+	
+	@FindBy(xpath="//h3[text()='Thank You']")
+	private WebElement trade_thankyoupopup;
+	
+	@FindBy(xpath="//div[@class='modal-content viewimg-popup']//div//button[@onclick='closePopUp()']")
+	private WebElement trade_popupclose1;
+	
+	@FindBy(xpath="//span[text()='Attach your Screen']")
+	private WebElement trade_upload1;
+	
+	@FindBy(xpath="//div[@class='file-upload-filename']")
+	private WebElement trade_filename;
+	
+	@FindBy(xpath="//ul[@id='listingquery']//li")//ul[@id='listingquery']//li
+	private WebElement listrecord1;
+	
+	//(//div[@class='intr-txt'])[1]
 	
 	
 	
@@ -233,7 +265,7 @@ public class Help_module_POM {
 	  
 	   
 	   
-				 public void querypopup1() throws InterruptedException {
+		   public void querypopup1() throws InterruptedException {
 		   
            String expectedMessage="Thank You";
            String actualMessage= thankyoupopup.getText();
@@ -245,9 +277,126 @@ public class Help_module_POM {
            else {
                System.out.println("Success message verification failed. Expected: " + expectedMessage + ", but got: " + actualMessage);
                }
-           Thread.sleep(2000);
+           
            popupclose1.click();
+           Thread.sleep(4000);
 		}
+				 
+				 
+		public void tradearrowClick() throws InterruptedException {
+			Thread.sleep(3000);
+			JavascriptExecutor jstrd2=(JavascriptExecutor)driver;
+			Thread.sleep(2000);
+			jstrd2.executeScript("window.scrollBy(0,1000)");
+			tradearrow.click();
+			
+		}		
+		
+		public void Navigatetradedetailspage() {
+			String expectedpageurl="https://cid.mstock.com/trade-Details";
+			String actualpageurl=driver.getCurrentUrl();
+			
+			if(actualpageurl.equals(expectedpageurl)) {
+				System.out.println("TRADE DETAILS PAGE URL IS MATCHING. TRADE DETAILS PAGE URL IS  :"+actualpageurl);
+			}else {
+				System.out.println("TRADE DETAILS PAGE URL IS NOT MATCHING");
+			}		
+		}
+				 
+		public void tradedetailscrolldown() throws InterruptedException {
+			JavascriptExecutor jstrd1=(JavascriptExecutor)driver;
+			Thread.sleep(2000);
+			jstrd1.executeScript("window.scrollBy(0,2000)");
+			//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", wrt);
+//			Thread.sleep(3000);
+//			wrt.click();	
+		}		 
+				 
+		 
+		public void tradequeryTextInput() {
+			   
+			   Boolean qti1=tradequeryinputbox.isDisplayed();
+			   Boolean qti2=tradequeryinputbox.isEnabled();
+			   System.out.println("TRDAE DETAIL QUERY INPUT TEXT BOX IS DISPLAY AND ITS EDITABLE:  "+qti1+"  "+qti2);
+		}
+		   
+		   public void tradeaddAttachquery() throws InterruptedException {
+			   tradequeryinputbox.sendKeys("Trade page query description added");
+			 Thread.sleep(2000);
+			 //raisebtn.click();
+		}
+		   public void tradeuploaddoc() throws InterruptedException, AWTException {
+			   tradeupload.click();
+			   
+			  try {
+				   
+		            // Create an instance of Robot class
+		            Robot robot = new Robot();
+	                 Thread.sleep(2000);
+		            // Copy the file path to the clipboard
+		            StringSelection filePath = new StringSelection("D:\\photo\\screen1.PNG");
+		            Thread.sleep(2000);
+		            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
+		            Thread.sleep(2000);
+
+		            // Press CTRL+V to paste the file path
+		            robot.keyPress(KeyEvent.VK_CONTROL);
+		            robot.keyPress(KeyEvent.VK_V);
+		            Thread.sleep(2000);
+		            robot.keyRelease(KeyEvent.VK_V);
+		            robot.keyRelease(KeyEvent.VK_CONTROL);
+		            Thread.sleep(2000);
+		            // Press ENTER to upload the file
+		            robot.keyPress(KeyEvent.VK_ENTER);
+		            robot.keyRelease(KeyEvent.VK_ENTER);
+		        
+		            Thread.sleep(2000);
+			   
+		            trdraisebtn.click();
+			  } catch (AWTException e) {
+		            e.printStackTrace();
+			   }
+		   }
+		   
+		   public void trd_uplo_file_name() throws InterruptedException {
+			   Thread.sleep(3000);
+				  String trdfn=trade_filename.getText();
+				  System.out.println("UPLOADED FILE NAME IS  :"+ trdfn);
+			  
+		}
+			  
+	  
+		   public void trade_querypopup1() throws InterruptedException {
+			   
+	           String expectedMessage="Thank You";
+	           String actualMessage= trade_thankyoupopup.getText();
+	 
+	           if(actualMessage.equals(expectedMessage)) {
+	        	   System.out.println("Success message verified: " + actualMessage);
+	           } 
+	           
+	           else {
+	               System.out.println("Success message verification failed. Expected: " + expectedMessage + ", but got: " + actualMessage);
+	               }
+	           
+	           trade_popupclose1.click();
+	           Thread.sleep(4000);
+			}
+					 
+		//************************* @thirdTest***************************************************//	 	 
+				 
+			public void Scroll_till_AYQ() throws InterruptedException {
+				JavascriptExecutor js_auq=(JavascriptExecutor)driver;
+				Thread.sleep(2000);
+				js_auq.executeScript("window.scrollBy(0,2000)");
+			}	 
+				 
+			public void verifyQuery() {
+			String record=listrecord1.getText();
+			System.out.println("Latest recored found in ALL YOUR QUERY is  :" +record);
+				
+				
+				}	 
 	   
 	   }
           
