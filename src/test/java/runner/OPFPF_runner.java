@@ -1,5 +1,6 @@
 package runner;
 
+
 import io.cucumber.java.en.When;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -8,19 +9,15 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		  features={"src\\main\\resources\\Help Module\\Helpmodule.feature"},
+		  features={"src\\main\\resources\\onscreen\\OPFPF.feature"},
 		  glue= {"steps"},
 		plugin= {"pretty", "html:target1/cucumber-html-report.htm","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-		tags= "@secondTest or @thirdTest")
+		tags= "@positions")
 		//publish=true)
    
-		  
-		
 
-public class HelpModule_runner extends AbstractTestNGCucumberTests{
 
-	
-	
-	
-	
+
+public class OPFPF_runner extends AbstractTestNGCucumberTests {
+
 }
