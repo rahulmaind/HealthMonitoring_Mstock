@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 		  features={"src\\main\\resources\\onscreen\\OPFPF.feature"},
 		  glue= {"steps"},
 		plugin= {"pretty", "html:target1/cucumber-html-report.htm","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
-		tags= "@positions")
+		tags= "@orders or @positions or @portfolio or @funds")
 		//publish=true)
    
 

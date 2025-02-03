@@ -84,13 +84,13 @@ public class OPFPF_POM {
 	private WebElement pos_faq_clickhere;
 	
 	@FindBy(xpath="(//textarea[@id='text_area'])[1]")
-	private WebElement pos_ord_textarea;
+	private WebElement pos_textarea;
 	
 	@FindBy(xpath="//span[text()='Attach your screen']")
-	private WebElement pos_ord_attchment;
+	private WebElement pos_attchment;
 	
 	@FindBy(xpath="//button[text()='Raise Query']")
-	private WebElement pos_ord_raise;
+	private WebElement pos_raise;
 	
 	@FindBy(xpath="//p[@class='text-success text-center']")
 	private WebElement pos_verify_img;
@@ -201,11 +201,7 @@ public class OPFPF_POM {
 					System.out.println("PAGE TITLE IS: " +title);
 					Thread.sleep(2000);
 				}
-//				public void clickhamburger() throws InterruptedException {
-//				
-//					hamburger.click();
-//				  }
-//	
+
 				public void ordClick() throws InterruptedException {
 					Thread.sleep(1000);
 					ord.click();	
@@ -256,7 +252,7 @@ public class OPFPF_POM {
 				            Robot robot = new Robot();
 			                 Thread.sleep(2000);
 				            // Copy the file path to the clipboard
-				            StringSelection filePath = new StringSelection("D:\\photo\\screen1.PNG");
+				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
 				            Thread.sleep(2000);
 				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
 				            Thread.sleep(2000);
@@ -294,12 +290,272 @@ public class OPFPF_POM {
 				
 				//************************ positions***************************//
 				
+				public void posClick() throws InterruptedException {
+					Thread.sleep(1000);
+					pos.click();	
+				}
+				public void pos_rel_query() throws InterruptedException {
+					Thread.sleep(1000);
+					pos_query.click();
+				}
+				
+				public void pos_popupfaq() {
+					String poss1= pos_faq_popup.getText();
+					System.out.println("Position FAQ POP UP IS OPEN AND HEADER HEADING IS :"+poss1);
+				}
+				
+				public void pos_arrowOClick() throws InterruptedException {
+					Thread.sleep(2000);
+					pos_arwfaq.click();
+				}
+				
+				public void pos_link_Visibility() {
+				boolean poslinkhere=	pos_faq_clickhere.isDisplayed();
+				System.out.println("POST CLICK ON ARROW BUTTOIN FAQ SECTION IS EXPANDED AND BY CLICKING HERE LINK IS VISIBLE  :" + poslinkhere);
+				}
+				
+				public void pos_by_clicking_here() throws InterruptedException {
+					Thread.sleep(2000);
+					pos_faq_clickhere.click();
+				}
+				
+				public void pos_verify_textarea() {
+					boolean postxt1= pos_textarea.isDisplayed();
+					boolean postxt2= pos_textarea.isEnabled();
+					System.out.println("POSITION QUERY TEXT AREA IS DISPLAYED   :"+postxt1 +"     AND IS ENABLED   :"+postxt2 );
+				}
+				
+				public void pos_enterquery() throws InterruptedException {
+					
+					pos_textarea.sendKeys("Test Position Query raises successfully!!!!");	
+					Thread.sleep(2000);
+				}
+				
+				public void pos_attch_file() throws InterruptedException {
+					pos_attchment.click();
+					Thread.sleep(2000);
+					 try {
+						   
+				            // Create an instance of Robot class
+				            Robot robot = new Robot();
+			                 Thread.sleep(2000);
+				            // Copy the file path to the clipboard
+				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
+				            Thread.sleep(2000);
+				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
+				            Thread.sleep(2000);
+
+				            // Press CTRL+V to paste the file path
+				            robot.keyPress(KeyEvent.VK_CONTROL);
+				            robot.keyPress(KeyEvent.VK_V);
+				            Thread.sleep(2000);
+				            robot.keyRelease(KeyEvent.VK_V);
+				            robot.keyRelease(KeyEvent.VK_CONTROL);
+				            Thread.sleep(2000);
+				            // Press ENTER to upload the file
+				            robot.keyPress(KeyEvent.VK_ENTER);
+				            robot.keyRelease(KeyEvent.VK_ENTER);
+				        
+				            Thread.sleep(2000);
+					   
+					  } catch (AWTException e) {
+				            e.printStackTrace();
+					   }
+					
+				}
+				
+				public void pos_raise_click() throws InterruptedException {
+					pos_raise.click();
+					Thread.sleep(2000);
+				}
+				
+				public void pos_upload_img() throws InterruptedException {
+					Thread.sleep(2000);
+					boolean posimg1=pos_verify_img.isDisplayed();
+					System.out.println("UPLOADED IMG FORMAT IS DISPLAY PROPERLY BELOW TEXT AREA   :"+ posimg1);
+					Thread.sleep(2000);
+				}
 				
 				
 				
 				//************************ portfolio***************************//
+				
+				public void porClick() throws InterruptedException {
+					Thread.sleep(1000);
+					por.click();	
+				}
+				public void por_rel_query() throws InterruptedException {
+					Thread.sleep(1000);
+					por_query.click();
+				}
+				
+				public void por_popupfaq() {
+					String pors1= por_faq_popup.getText();
+					System.out.println("Portfolio FAQ POP UP IS OPEN AND HEADER HEADING IS :"+pors1);
+				}
+				
+				public void por_arrowOClick() throws InterruptedException {
+					Thread.sleep(2000);
+					por_arwfaq.click();
+				}
+				
+				public void por_link_Visibility() {
+				boolean porlinkhere=	por_faq_clickhere.isDisplayed();
+				System.out.println("POST CLICK ON ARROW BUTTOIN FAQ SECTION IS EXPANDED AND BY CLICKING HERE LINK IS VISIBLE  :" + porlinkhere);
+				}
+				
+				public void por_by_clicking_here() throws InterruptedException {
+					Thread.sleep(2000);
+					por_faq_clickhere.click();
+				}
+				
+				public void por_verify_textarea() {
+					boolean portxt1= por_textarea.isDisplayed();
+					boolean portxt2= por_textarea.isEnabled();
+					System.out.println("PORTFOLIO QUERY TEXT AREA IS DISPLAYED   :"+portxt1 +"     AND IS ENABLED   :"+portxt2 );
+				}
+				
+				public void por_enterquery() throws InterruptedException {
+					
+					por_textarea.sendKeys("Test Portfolio Query raises successfully!!!!");	
+					Thread.sleep(2000);
+				}
+				
+				public void por_attch_file() throws InterruptedException {
+					por_attchment.click();
+					Thread.sleep(2000);
+					 try {
+						   
+				            // Create an instance of Robot class
+				            Robot robot = new Robot();
+			                 Thread.sleep(2000);
+				            // Copy the file path to the clipboard
+				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
+				            Thread.sleep(2000);
+				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
+				            Thread.sleep(2000);
+
+				            // Press CTRL+V to paste the file path
+				            robot.keyPress(KeyEvent.VK_CONTROL);
+				            robot.keyPress(KeyEvent.VK_V);
+				            Thread.sleep(2000);
+				            robot.keyRelease(KeyEvent.VK_V);
+				            robot.keyRelease(KeyEvent.VK_CONTROL);
+				            Thread.sleep(2000);
+				            // Press ENTER to upload the file
+				            robot.keyPress(KeyEvent.VK_ENTER);
+				            robot.keyRelease(KeyEvent.VK_ENTER);
+				        
+				            Thread.sleep(2000);
+					   
+					  } catch (AWTException e) {
+				            e.printStackTrace();
+					   }
+					
+				}
+				
+				public void por_raise_click() throws InterruptedException {
+					por_raise.click();
+					Thread.sleep(2000);
+				}
+				
+				public void por_upload_img() throws InterruptedException {
+					Thread.sleep(2000);
+					boolean porimg1=por_verify_img.isDisplayed();
+					System.out.println("UPLOADED IMG FORMAT IS DISPLAY PROPERLY BELOW TEXT AREA   :"+ porimg1);
+					Thread.sleep(2000);
+				}
+				
+				
+				
+				
 				//************************ funds***************************//
 				
+				public void fundsClick() throws InterruptedException {
+					Thread.sleep(1000);
+					funds.click();	
+				}
+				public void funds_rel_query() throws InterruptedException {
+					Thread.sleep(1000);
+					funds_query.click();
+				}
+				
+				public void funds_popupfaq() {
+					String fs1= funds_faq_popup.getText();
+					System.out.println("Funds FAQ POP UP IS OPEN AND HEADER HEADING IS :"+fs1);
+				}
+				
+				public void funds_arrowOClick() throws InterruptedException {
+					Thread.sleep(2000);
+					funds_arwfaq.click();
+				}
+				
+				public void funds_link_Visibility() {
+				boolean fundslinkhere=	funds_faq_clickhere.isDisplayed();
+				System.out.println("POST CLICK ON ARROW BUTTOIN FAQ SECTION IS EXPANDED AND BY CLICKING HERE LINK IS VISIBLE  :" + fundslinkhere);
+				}
+				
+				public void funds_by_clicking_here() throws InterruptedException {
+					Thread.sleep(2000);
+					funds_faq_clickhere.click();
+				}
+				
+				public void funds_verify_textarea() {
+					boolean fundstxt1= funds_textarea.isDisplayed();
+					boolean fundstxt2= funds_textarea.isEnabled();
+					System.out.println("funds QUERY TEXT AREA IS DISPLAYED   :"+fundstxt1 +"     AND IS ENABLED   :"+fundstxt2 );
+				}
+				
+				public void funds_enterquery() throws InterruptedException {
+					
+					funds_textarea.sendKeys("Test funds Query raises successfully!!!!");	
+					Thread.sleep(2000);
+				}
+				
+				public void funds_attch_file() throws InterruptedException {
+					funds_attchment.click();
+					Thread.sleep(2000);
+					 try {
+						   
+				            // Create an instance of Robot class
+				            Robot robot = new Robot();
+			                 Thread.sleep(2000);
+				            // Copy the file path to the clipboard
+				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
+				            Thread.sleep(2000);
+				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
+				            Thread.sleep(2000);
+
+				            // Press CTRL+V to paste the file path
+				            robot.keyPress(KeyEvent.VK_CONTROL);
+				            robot.keyPress(KeyEvent.VK_V);
+				            Thread.sleep(2000);
+				            robot.keyRelease(KeyEvent.VK_V);
+				            robot.keyRelease(KeyEvent.VK_CONTROL);
+				            Thread.sleep(2000);
+				            // Press ENTER to upload the file
+				            robot.keyPress(KeyEvent.VK_ENTER);
+				            robot.keyRelease(KeyEvent.VK_ENTER);
+				        
+				            Thread.sleep(2000);
+					   
+					  } catch (AWTException e) {
+				            e.printStackTrace();
+					   }
+					
+				}
+				
+				public void funds_raise_click() throws InterruptedException {
+					funds_raise.click();
+					Thread.sleep(2000);
+				}
+				
+				public void funds_upload_img() throws InterruptedException {
+					Thread.sleep(2000);
+					boolean fundsimg1=funds_verify_img.isDisplayed();
+					System.out.println("UPLOADED IMG FORMAT IS DISPLAY PROPERLY BELOW TEXT AREA   :"+ fundsimg1);
+					Thread.sleep(2000);
+				}
 				
 				
 				
