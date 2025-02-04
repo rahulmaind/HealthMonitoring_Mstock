@@ -252,7 +252,7 @@ public class OPFPF_POM {
 				            Robot robot = new Robot();
 			                 Thread.sleep(2000);
 				            // Copy the file path to the clipboard
-				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
+				            StringSelection filePath = new StringSelection("D:\\photo\\screen1.PNG");
 				            Thread.sleep(2000);
 				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
 				            Thread.sleep(2000);
@@ -340,7 +340,7 @@ public class OPFPF_POM {
 				            Robot robot = new Robot();
 			                 Thread.sleep(2000);
 				            // Copy the file path to the clipboard
-				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
+				            StringSelection filePath = new StringSelection("D:\\photo\\screen1.PNG");
 				            Thread.sleep(2000);
 				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
 				            Thread.sleep(2000);
@@ -430,7 +430,7 @@ public class OPFPF_POM {
 				            Robot robot = new Robot();
 			                 Thread.sleep(2000);
 				            // Copy the file path to the clipboard
-				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
+				            StringSelection filePath = new StringSelection("D:\\photo\\screen1.PNG");
 				            Thread.sleep(2000);
 				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
 				            Thread.sleep(2000);
@@ -521,7 +521,7 @@ public class OPFPF_POM {
 				            Robot robot = new Robot();
 			                 Thread.sleep(2000);
 				            // Copy the file path to the clipboard
-				            StringSelection filePath = new StringSelection("C:\\Users\\rahul\\Desktop\\DBP00292.JPG");
+				            StringSelection filePath = new StringSelection("D:\\photo\\screen1.PNG");
 				            Thread.sleep(2000);
 				            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filePath, null);
 				            Thread.sleep(2000);

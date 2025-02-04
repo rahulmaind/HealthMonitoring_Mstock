@@ -91,6 +91,7 @@ public class OPFPF {
 
 	@Then("Attachment should be added and display below input box.")
 	public void attachment_should_be_added_and_display_below_input_box() throws InterruptedException {
+		
 		onscreen.ord_upload_img();
 	}
 
