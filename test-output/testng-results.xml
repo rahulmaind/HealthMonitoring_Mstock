@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-04T11:37:10 IST" name="Default suite" finished-at="2025-02-04T11:37:59 IST" duration-ms="49199">
+  <suite started-at="2025-02-05T16:38:11 IST" name="Default suite" finished-at="2025-02-05T16:38:39 IST" duration-ms="27706">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-04T11:37:10 IST" name="Default test" finished-at="2025-02-04T11:37:59 IST" duration-ms="49199">
+    <test started-at="2025-02-05T16:38:11 IST" name="Default test" finished-at="2025-02-05T16:38:39 IST" duration-ms="27706">
       <class name="runner.OPFPF_runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-04T11:37:10 IST" name="setUpClass" finished-at="2025-02-04T11:37:10 IST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-05T16:38:11 IST" name="setUpClass" finished-at="2025-02-05T16:38:12 IST" duration-ms="416" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2a7bc16b]]>
+                <![CDATA[org.testng.TestRunner@4cd7d5e1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-04T11:37:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-04T11:37:58 IST" duration-ms="47518" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-05T16:38:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-05T16:38:38 IST" duration-ms="25910" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify the order tab/page Raise query functionality"]]>
+                <![CDATA["Verify the queries are listed/store in help page"]]>
               </value>
             </param>
             <param index="1">
@@ -34,54 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4799dae33e17a17f89a48c82b5a85d6, clickElement {id=f.6BF59D13ECD56411F377F131F7A1CBCD.d.3FE52D06770D4B8362B44769964B5ACF.e.199}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\RAHUL~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54368/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f4799dae33e17a17f89a48c82b5a85d6)] -> xpath: //span[text()='Attach your screen']]
-Session ID: f4799dae33e17a17f89a48c82b5a85d6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=131.0.6778.140)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4799dae33e17a17f89a48c82b5a85d6, clickElement {id=f.6BF59D13ECD56411F377F131F7A1CBCD.d.3FE52D06770D4B8362B44769964B5ACF.e.199}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\RAHUL~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54368/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f4799dae33e17a17f89a48c82b5a85d6)] -> xpath: //span[text()='Attach your screen']]
-Session ID: f4799dae33e17a17f89a48c82b5a85d6
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-at pom.OPFPF_POM.funds_attch_file(OPFPF_POM.java:516)
-at steps.OPFPF.attachment_should_be_added_and_display_below_input_box(OPFPF.java:94)
-at ✽.Attachment should be added and display below input box.(file:///C:/Users/rahul.nityo/git/src/main/resources/onscreen/OPFPF.feature:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-04T11:37:58 IST" name="tearDownClass" finished-at="2025-02-04T11:37:59 IST" duration-ms="1236" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-05T16:38:38 IST" name="tearDownClass" finished-at="2025-02-05T16:38:39 IST" duration-ms="1356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -5,10 +5,14 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -155,6 +159,17 @@ public class OPFPF_POM {
 	
 	@FindBy(xpath="//p[@class='text-success text-center']")
 	private WebElement funds_verify_img;
+	
+	
+	
+	//************************ verifySentQuery***************************//
+	
+	@FindBy(xpath = "//p[text()='Help']")
+    private WebElement help;
+    @FindBy(xpath = "//*[text()='Quick Links']")
+    private WebElement gettext;
+    @FindBy(xpath = "//ul[@id=\"listingquery\"]")
+    private WebElement getcrrentqueires;
 	
 	
 	
@@ -557,6 +572,51 @@ public class OPFPF_POM {
 					Thread.sleep(2000);
 				}
 				
+				
+				//************************ verifySentQuery***************************//
+				
+				@FindBy(xpath = "//*[@class='hamburger']")
+			    private WebElement hamburger1;
+				public void clkhamburger() {
+			    	hamburger1.click();
+			    }
+			    
+			    
+				public void helppage11() {
+			    	//startTime = System.currentTimeMillis();
+			        help.click();
+			        // Wait for the page to load or some element to be visible
+			       // WebDriverWait wait = new WebDriverWait(driver, 10);
+			              //  .until(ExpectedConditions.visibilityOfElementLocated(By.id("result-element")));
+			       // endTime = System.currentTimeMillis();
+			        //long loadTime = endTime - startTime;
+			        //System.out.println("Load time: " + loadTime + " milliseconds");
+			    }
+			    public void getCurrentraisequiery() {
+			    	String verifydata = getcrrentqueires.getText();
+			    	System.out.println(verifydata);
+			    }
+			    public void help2Page() throws InterruptedException {
+					Thread.sleep(2000);
+					//Get the list of all open tabs
+			        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+			 
+			        // Switch to the new tab
+			        driver.switchTo().window(tabs.get(1));
+			        
+					System.out.println("HELP MAIN PAGE TITLE IS  :" + driver.getTitle() +"AND HELP PAGE OPEN SUCCESSFULLY");
+					
+					Thread.sleep(2000);
+				}
+			    public void Actiondown() {
+			    	// Scroll down the page using the Page Down key
+			        Actions actions = new Actions(driver);
+			        actions.sendKeys(Keys.PAGE_DOWN).perform();
+			    }
+			    public void Scrolling() {
+			    	 JavascriptExecutor Jv = (JavascriptExecutor)driver;
+						Jv.executeScript("window.scrollBy(0,2500)");
+			    }
 				
 				
 }

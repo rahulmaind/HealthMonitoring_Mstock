@@ -311,5 +311,31 @@ public class OPFPF {
 	      
 	}
 	
+	//************************ verifySentQuery***************************//
+	@When("Click on home page hamburger menu")
+	public void click_on_home_page_hamburger_menu() throws InterruptedException {
+		onscreen.clkhamburger();
+		Thread.sleep(1000);
+	}
+	
+	@When("click on Help module")
+	public void click_on_help_module() throws InterruptedException {
+		
+	   onscreen.helppage11();
+	}
+
+	@Then("the Help page is open")
+	public void the_help_page_is_open() throws InterruptedException {
+	    onscreen.help2Page();
+	    Thread.sleep(1000);
+	    onscreen.Scrolling();
+	}
+
+	@Then("the All Recent Queries is displayed on this page")
+	public void the_all_recent_queries_is_displayed_on_this_page() {
+		onscreen.getCurrentraisequiery();
+	}
+
+	
 	
 }

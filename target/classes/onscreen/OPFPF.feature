@@ -6,7 +6,7 @@ When User entered valid email id and password.
 #Then User should navigate to OTP page and verfy the OTP.
 And Accepted the Risk Disclosure Darivative pop up
 And User should redirect on a mStock home page
-#When Click on home page hamburger menu
+
 
 @orders
 Scenario: Verify the order tab/page Raise query functionality
@@ -80,3 +80,10 @@ When user add the input, query attachment and click on Raise query button.
 Then Fund query related Attachment should be added and display below input box.
 And Success pop up messege should be display properly and verified.
 And verify load time of the funds success pop up.
+
+@verifySentQuery
+Scenario: Verify the queries are listed/store in help page
+When Click on home page hamburger menu
+ And click on Help module
+    Then the Help page is open
+    And the All Recent Queries is displayed on this page
