@@ -67,7 +67,7 @@ public class Trading_Account_5 {
 	}
 
 	@When("The user scrolls down page and clicks on the tab.")
-	public void the_user_scrolls_down_page_and_clicks_on_the_tab() {
+	public void the_user_scrolls_down_page_and_clicks_on_the_tab() throws InterruptedException {
 	   trading.Scroll();
 	}
 

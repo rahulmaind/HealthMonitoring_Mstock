@@ -230,8 +230,9 @@ public class Trading_account_5_POM {
 
  }
  
- public void Scroll() {
+ public void Scroll() throws InterruptedException {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
+		Thread.sleep(1000);
    	 js.executeScript("window.scrollBy(0,1000)");
  }
 
@@ -427,8 +428,9 @@ public void pageload() throws InterruptedException {
 			
 		 boolean b2=mstockOpenaccbtn.isDisplayed();
 		 System.out.println("OPEN DEMAT ACCOUNT BUTTON IS DISPLAY:: "+b2);
+		 Thread.sleep(1000);
 		 mstcokinput.sendKeys("9678562492");
-		 Thread.sleep(2000);
+		 Thread.sleep(3000);
 		 mstockOpenaccbtn.click();
 		 Thread.sleep(2000);
 		 }

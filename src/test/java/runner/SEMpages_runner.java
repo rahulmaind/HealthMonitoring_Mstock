@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		  features={"C:\\Users\\rahul.nityo\\OneDrive - Mirae Asset Capital Markets (India) Pvt. Ltd\\Desktop\\HealthMonitoring\\src\\main\\resources\\Feature\\5_trading-account.feature"},
+		  features={"src\\main\\resources"},
 		  glue= {"steps"},
 		  plugin= {"pretty", "html:target1/cucumber-html-report.htm","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		//tags= "@TradingAccount or @MF or @ZeroBrokerage or @MstockPage or @SEMOpendemataccount or @MTF or @RaN or @Pricing or @MTFCalculator"

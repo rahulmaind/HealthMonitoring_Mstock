@@ -14,22 +14,22 @@ Scenario: Verify the demat-account Account landing page is loads successfully
 When we enter phone number in mobile field.
 Then User should redirect on OTP screen page1..
  
-Scenario: Verify the Scrolling and Shuffling Tab
+#Scenario: Verify the Scrolling and Shuffling Tab
 
 When The user scrolls down page and clicks on the tab.
 Then The tabs should be clickable and images should display properly.
  
-Scenario: Verify the Second Phone Number Field
+#Scenario: Verify the Second Phone Number Field
 
 When we enters phone number and click on the Open Account button.
 Then User should redirect on the second OTP screen page.
  
-Scenario: Verify the FAQs
+#Scenario: Verify the FAQs
 
 When The user clicks on the FAQ down arrows.
 Then Arrows should be clickable and the answer should be displayed.
  
-Scenario: Verify the footer CTA is clickable
+#Scenario: Verify the footer CTA is clickable
 
 When User click on the CTA present in DALfooter.
 Then User should nevigate on respective page then page loads successfully.
