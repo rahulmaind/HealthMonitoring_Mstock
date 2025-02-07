@@ -62,7 +62,7 @@ public class OPFPF {
 
 	@When("user click on FAQ question arrow button")
 	public void user_click_on_faq_question_arrow_button() throws InterruptedException {
-	    onscreen.ord_arrowOClick();
+	    onscreen.ord_arrowOClick(); 
 	}
 
 	@Then("FAQ should expand and by clicking here. link should be visible.")
@@ -128,7 +128,8 @@ public class OPFPF {
 
 	@When("user click on positions FAQ question arrow button")
 	public void user_click_on_positions_faq_question_arrow_button() throws InterruptedException {
-	     onscreen.pos_arrowOClick();
+	     //onscreen.pos_arrowOClick();
+	     onscreen.ord_arrowOClick();
 	    
 	}
 
@@ -197,7 +198,8 @@ public class OPFPF {
 
 	@When("user click on portfolio FAQ question arrow button")
 	public void user_click_on_portfolio_faq_question_arrow_button() throws InterruptedException {
-	      onscreen.por_arrowOClick();
+	      //onscreen.por_arrowOClick();
+	      onscreen.ord_arrowOClick();
 	      
 	}
 
@@ -265,32 +267,33 @@ public class OPFPF {
 
 	@When("user click on funds FAQ question arrow button")
 	public void user_click_on_funds_faq_question_arrow_button() throws InterruptedException {
-	    onscreen.funds_arrowOClick();  
-	      
+	    //onscreen.funds_arrowOClick();  
+		onscreen.ord_arrowOClick(); 
 	}
 
 	@Then("FAQ should expand and {string} link should be visible.")
 	public void faq_should_expand_and_link_should_be_visible(String string) {
-	      onscreen.funds_link_Visibility();
+	     // onscreen.funds_link_Visibility();
+		onscreen.link_Visibility();
 	      
 	}
 
 	@When("user click on the by clicking here. link")
 	public void user_click_on_the_by_clicking_here_link() throws InterruptedException {
-	     onscreen.funds_by_clicking_here(); 
-	      
+	     //onscreen.funds_by_clicking_here(); 
+		onscreen.by_clicking_here(); 
 	}
 
 	@Then("Query Input text box should open and editable.")
 	public void query_input_text_box_should_open_and_editable() {
-	    onscreen.funds_verify_textarea();  
-	      
+	    //onscreen.funds_verify_textarea();  
+		onscreen.verify_textarea();  
 	}
 
 	@When("user add the input, query attachment and click on Raise query button.")
 	public void user_add_the_input_query_attachment_and_click_on_raise_query_button() throws InterruptedException {
-	     onscreen.funds_enterquery(); 
-	      
+	     //onscreen.funds_enterquery(); 
+		onscreen.ord_enterquery();  
 	}
 
 	@Then("Fund query related Attachment should be added and display below input box.")
