@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 6, 2025 11:07:55 am</span></a>
+<a href="#"><span class="badge badge-primary">Feb 10, 2025 02:37:32 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,31 +84,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@MTF</a><a class="dropdown-item" href="#">@RaN</a><a class="dropdown-item" href="#">@MstockPage</a><a class="dropdown-item" href="#">@MF</a><a class="dropdown-item" href="#">@verifySentQuery</a><a class="dropdown-item" href="#">@portfolio</a><a class="dropdown-item" href="#">@MTFCalculator</a><a class="dropdown-item" href="#">@firsttest</a><a class="dropdown-item" href="#">@positions</a><a class="dropdown-item" href="#">@ZeroBrokerage</a><a class="dropdown-item" href="#">@Pricing</a><a class="dropdown-item" href="#">@secondTest</a><a class="dropdown-item" href="#">@orders</a><a class="dropdown-item" href="#">@SEMOpendemataccount</a><a class="dropdown-item" href="#">@DematAccountLanding</a><a class="dropdown-item" href="#">@TradingAccount</a><a class="dropdown-item" href="#">@thirdTest</a><a class="dropdown-item" href="#">@funds</a>
+<a class="dropdown-item" href="#">@portfolio</a><a class="dropdown-item" href="#">@orders</a><a class="dropdown-item" href="#">@positions</a><a class="dropdown-item" href="#">@verifySentQuery</a><a class="dropdown-item" href="#">@funds</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Verify Trading Account Page.</p>
+            <p class="name">Login to Mstock Website</p>
             <p class="text-sm">
-              <span>11:07:55 am</span> / <span>00:02:00:202</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>2:37:32 pm</span> / <span>00:03:29:648</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Verify Trading Account Page.</h5>
-<span class='badge badge-success'>02.06.2025 11:07:55 am</span>
-<span class='badge badge-danger'>02.06.2025 11:09:56 am</span>
-<span class='badge badge-default'>00:02:00:202</span>
+<h5 class="test-status text-fail">Login to Mstock Website</h5>
+<span class='badge badge-success'>02.10.2025 2:37:32 pm</span>
+<span class='badge badge-danger'>02.10.2025 2:41:02 pm</span>
+<span class='badge badge-default'>00:03:29:648</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -115,775 +120,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the demat-account Account landing page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.demat_account_Landing.i_am_on_the_demat_account_landing_page()">
-                <span>Given I am on the Demat Account Landing Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.the_DALpage_loads_completely()">
-                <span>When the DALpage loads completely.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.the_title_of_the_DALpage_should_be(java.lang.String)">
-                <span>Then the title of the DALpage should be "Open Demat Account Online | mStock".</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.dal_url_should_be(java.lang.String)">
-                <span>And DAL URL should be "https://www.mstock.com/sem-landing/demat-account".</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.dalpage_should_contain_a_heading(java.lang.String)">
-                <span>And DALpage should contain a heading "Open Your Demat Account".</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.dalpage_should_contain_a_button(java.lang.String)">
-                <span>And DALPage should contain a button "Open Demat Account".</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.we_enter_phone_number_in_mobile_filed()">
-                <span>When we enter phone number in mobile field.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_should_redirect_on_otp_screen_page1()">
-                <span>Then User should redirect on OTP screen page1..</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.the_user_scrolls_down_page_and_clicks_on_the_tab()">
-                <span>When The user scrolls down page and clicks on the tab.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.the_tabs_should_be_clickable_and_images_should_display_properly()">
-                <span>Then The tabs should be clickable and images should display properly.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.we_enters_phone_number_and_click_on_the_open_account_button()">
-                <span>When we enters phone number and click on the Open Account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_should_redirect_on_the_second_otp_screen_page()">
-                <span>Then User should redirect on the second OTP screen page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.the_user_clicks_on_the_faq_down_arrows()">
-                <span>When The user clicks on the FAQ down arrows.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.arrows_should_be_clickable_and_the_answer_should_be_displayed()">
-                <span>Then Arrows should be clickable and the answer should be displayed.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_click_on_the_cta_present_in_footer()">
-                <span>When User click on the CTA present in DALfooter.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_should_nevigate_on_respective_page_then_page_loads_successfully()">
-                <span>Then User should nevigate on respective page then page loads successfully.</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Verify the Trading Account page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_trading_account_page()">
-                <span>Given I am on the Trading Account Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_title_of_the_page_should_be(java.lang.String)">
-                <span>Then verify the title of the page should be "Trading Account"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.page_url_should_be(java.lang.String)">
-                <span>And Page URL should be "https://www.mstock.com/sem-landing/trading-account".</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate page should contain a heading "Open Your Demat Account".</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_to_load_the_page()">
-                <span>And Verify how much time takes to load the page.</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Verify the Zero Brokerage page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_zero_brokerage_page()">
-                <span>Given I am on the Zero Brokerage Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.page_loads_successfully()">
-                <span>When Page loads successfully.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_page_title_should_be(java.lang.String)">
-                <span>Then verify the page title should be "Zero Brokerage"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.page_url_should_be6(java.lang.String)">
-                <span>And Page URL should be6 "https://www.mstock.com/sem-landing/zero-brokerage"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_page_should_contain_a_heading6(java.lang.String)">
-                <span>And Validate page should contain a heading6 "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_to_load_the_page6()">
-                <span>And Verify how much time takes to load the page6</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>Verify the Mstock Main Page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_mstock_main_page()">
-                <span>Given I am on the Mstock Main Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.we_enter_mobile_number_on_main_page_and_click_on_open_your_demat_account_button()">
-                <span>When we enter Mobile number on Main Page and click on Open your demat account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_should_redirect_on_respective_otp_screen_page()">
-                <span>Then User should redirect on respective OTP screen page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_it_takes_to_load_the_mstock_main_page()">
-                <span>And Verify how much time it takes to load the Mstock main Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_mstock_main_page_title_should(java.lang.String)">
-                <span>And verify the Mstock main Page title should "Mstock main page"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.mstock_main_page_url_should_be(java.lang.String)">
-                <span>And Mstock main Page URL should be "https://www.mstock.com/"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_mstock_main_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate Mstock Main Page should contain a heading "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Verify the Organic SEM Open demat account page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_organic_sem_open_demat_account_page()">
-                <span>Given I am on the Organic SEM Open demat account Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.we_enter_mobile_number_in_organic_sem_open_demat_account_and_click_on_open_your_demat_account_button()">
-                <span>When we enter Mobile number in Organic SEM Open demat account and click on Open your demat account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_should_be_redirect_on_otp_screen_page()">
-                <span>Then User should be redirect on OTP screen page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_for_load_the_organic_sem_open_demat_account_page()">
-                <span>And Verify how much time takes for load the Organic SEM Open demat account Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_organic_sem_open_demat_account_page_title_should(java.lang.String)">
-                <span>And verify the Organic SEM Open demat account Page title should "Open demat account"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.organic_sem_open_demat_account_page_url_should_be(java.lang.String)">
-                <span>And Organic SEM Open demat account Page URL should be "https://www.mstock.com/open-demat-account"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_organic_sem_open_demat_account_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate Organic SEM Open demat account Page should contain a heading "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Verify the Margin trading facility page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_margin_trading_facility_page()">
-                <span>Given I am on the Margin trading facility Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.we_enter_mobile_number_and_click_on_open_your_demat_account_button()">
-                <span>When we enter Mobile number and click on Open your demat account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_should_redirect_on_otp_screen_page()">
-                <span>Then User should redirect on OTP screen page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_to_load_the_margin_trading_facility_page()">
-                <span>And Verify how much time takes to load the Margin trading facility Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_margin_trading_facility_page_title_should(java.lang.String)">
-                <span>And verify the Margin trading facility Page title should "Margin trading facility page"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.margin_trading_facility_page_url_should_be(java.lang.String)">
-                <span>And Margin trading facility Page URL should be "https://www.mstock.com/margin-trading-facility"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_margin_trading_facility_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate Margin trading facility Page should contain a heading "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>Verify theRefer and earn page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_refer_and_earn_page()">
-                <span>Given I am on the Refer and earn Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_enter_mobile_number_and_click_on_open_your_demat_account_button()">
-                <span>When User enter Mobile number and click on Open your demat account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.system_should_redirect_on_otp_screen_page()">
-                <span>Then system should redirect on OTP screen page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_to_load_the_refer_and_earn_page()">
-                <span>And Verify how much time takes to load the Refer and earn Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_refer_and_earn_page_title_should(java.lang.String)">
-                <span>And verify the Refer and earn Page title should "Mstock main page"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.refer_and_earn_page_url_should_be(java.lang.String)">
-                <span>And Refer and earn Page URL should be "https://www.mstock.com/refer-and-earn"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_refer_and_earn_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate Refer and earn Page should contain a heading "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Verify thePricing page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_pricing_page()">
-                <span>Given I am on the Pricing Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_enter_mobile_number_then_click_on_open_your_demat_account_button()">
-                <span>When User enter Mobile number then click on Open your demat account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.system_should_redirect_on_enter_otp_screen_page()">
-                <span>Then system should redirect on enter OTP screen page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_to_load_the_pricing_page()">
-                <span>And Verify how much time takes to load the Pricing Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_pricing_page_title_should(java.lang.String)">
-                <span>And verify the Pricing Page title should "Mstock main page"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.pricing_page_url_should_be(java.lang.String)">
-                <span>And Pricing Page URL should be "https://www.mstock.com/pricing"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_pricing_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate Pricing Page should contain a heading "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Verify the Mutual fund investment page is loads successfully.</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_mutual_fund_investment_page()">
-                <span>Given I am on the Mutual fund investment Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_must_enter_mobile_number_then_click_on_open_your_demat_account_button()">
-                <span>When User must enter Mobile number then click on Open your demat account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.system_should_redirect_on_enter_otp_screen_page_and_verify_the_screen()">
-                <span>Then system should redirect on enter OTP screen page and verify the screen.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_to_load_the_mutual_fund_investment_page()">
-                <span>And Verify how much time takes to load the Mutual fund investment Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_mutual_fund_investment_page_title_should(java.lang.String)">
-                <span>And verify the Mutual fund investment Page title should "Mutual fund investments"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.mutual_fund_investment_page_url_should_be(java.lang.String)">
-                <span>And Mutual fund investment Page URL should be "https://www.mstock.com/mutual-fund-investments"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_mutual_fund_investment_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate Mutual fund investment Page should contain a heading "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>Verify the Pricing page is loads successfully</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Trading_Account_5.i_am_on_the_mtf_calculator_page()">
-                <span>Given I am on the MTF Calculator Page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.user_should_enter_mobile_number_then_click_on_open_your_demat_account_button()">
-                <span>When User should enter Mobile number then click on Open your demat account button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.system_should_redirected_on_enter_otp_screen_page()">
-                <span>Then system should redirected on enter OTP screen page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_how_much_time_takes_to_load_the_mtf_calculator_page()">
-                <span>And Verify how much time takes to load the MTF Calculator Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.verify_the_mtf_calculator_page_title_should(java.lang.String)">
-                <span>And verify the MTF Calculator Page title should "MTF Calculator page"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.mtf_calculator_page_url_should_be(java.lang.String)">
-                <span>And MTF Calculator Page URL should be "https://www.mstock.com/margin-trading-facility/mtf-calculator"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Trading_Account_5.validate_mtf_calculator_page_should_contain_a_heading(java.lang.String)">
-                <span>And Validate MTF Calculator Page should contain a heading "Open Your Demat Account"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="118"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">User Login to Mstock Website</p>
-            <p class="text-sm">
-              <span>11:09:56 am</span> / <span>00:02:23:181</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">User Login to Mstock Website</h5>
-<span class='badge badge-success'>02.06.2025 11:09:56 am</span>
-<span class='badge badge-danger'>02.06.2025 11:12:19 am</span>
-<span class='badge badge-default'>00:02:23:181</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=118</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>Login with valid credentials</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Help_Module.user_is_on_mstock_login_page()">
-                <span>Given User is on Mstock login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_entered_valid_email_and_password()">
-                <span>When User entered valid email and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.accept_the_risk_disclosure_darivative_pop_up()">
-                <span>And Accept the Risk Disclosure Darivative pop up.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_should_see_a_m_stock_home_page()">
-                <span>And User should see a mStock home page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.click_on_home_pahe_hamburger_menu()">
-                <span>When Click on home page hamburger menu.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.select_the_help_menu()">
-                <span>And select the Help menu.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.help_main_page_should_open()">
-                <span>Then Help main page should open.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.verify_the_time_taken_for_load_the_help_page()">
-                <span>And verify the time taken for load the help page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_scroll_the_page_and_click_on_the_write_to_us_here_link()">
-                <span>When user scroll the page and click on the Write to us here link.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.input_box_should_open_and_editable()">
-                <span>Then Input box should open and editable.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_added_the_input_attachment_and_click_on_raise_button()">
-                <span>When user added the input, attachment and click on Raise button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.attachment_should_be_display_below_input_box()">
-                <span>Then Attachment should be display below input box.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.success_pop_up_msg_should_be_display_and_verified()">
-                <span>And Success pop up msg should be display and verified.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.verify_the_success_pop_up_load_time()">
-                <span>And verify the success pop up load time.</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="137"><span class="badge log pass-bg mr-2">Pass</span>Verify Have a Query module functionality</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Help_Module.user_is_on_mstock_login_page()">
-                <span>Given User is on Mstock login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_entered_valid_email_and_password()">
-                <span>When User entered valid email and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.accept_the_risk_disclosure_darivative_pop_up()">
-                <span>And Accept the Risk Disclosure Darivative pop up.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_should_see_a_m_stock_home_page()">
-                <span>And User should see a mStock home page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.click_on_home_pahe_hamburger_menu()">
-                <span>When Click on home page hamburger menu.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.select_the_help_menu()">
-                <span>And select the Help menu.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.help_main_page_should_open()">
-                <span>Then Help main page should open.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_is_on_help_page_and_click_on_trade_arrow_button_under_have_a_query_section()">
-                <span>When User is on Help page and click on trade arrow button under Have a Query? section</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.system_should_navigate_on_trade_details_page()">
-                <span>Then System should navigate on trade Details page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.scroll_down_the_page_till_the_bottom()">
-                <span>And Scroll down the page till the bottom.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_add_the_input_attachment_and_click_on_raise_button()">
-                <span>When user add the input, attachment and click on Raise button.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.attachment_name_with_delete_icon_should_be_display_below_input_box()">
-                <span>Then Attachment name with delete icon should be display below input box.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.success_pop_up_message_should_be_display_and_verified()">
-                <span>And Success pop up message should be display and verified.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.verify_the_success_message_pop_up_load_time()">
-                <span>And verify the success message pop up load time.</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="155"><span class="badge log pass-bg mr-2">Pass</span>Verify Have a Query module functionality</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="steps.Help_Module.user_is_on_mstock_login_page()">
-                <span>Given User is on Mstock login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_entered_valid_email_and_password()">
-                <span>When User entered valid email and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.accept_the_risk_disclosure_darivative_pop_up()">
-                <span>And Accept the Risk Disclosure Darivative pop up.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_should_see_a_m_stock_home_page()">
-                <span>And User should see a mStock home page.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.click_on_home_pahe_hamburger_menu()">
-                <span>When Click on home page hamburger menu.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.select_the_help_menu()">
-                <span>And select the Help menu.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.help_main_page_should_open()">
-                <span>Then Help main page should open.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.user_scroll_down_the_help_page_till_all_your_queries_section()">
-                <span>When user scroll down the help page till All Your Queries section.</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="steps.Help_Module.verify_the_queries_are_listed_in_all_your_queries_section()">
-                <span>Then Verify the Queries are listed in All Your Queries section.</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="168"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login to Mstock Website</p>
-            <p class="text-sm">
-              <span>11:12:19 am</span> / <span>00:03:43:679</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login to Mstock Website</h5>
-<span class='badge badge-success'>02.06.2025 11:12:19 am</span>
-<span class='badge badge-danger'>02.06.2025 11:16:03 am</span>
-<span class='badge badge-default'>00:03:43:679</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=168</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="169"><span class="badge log pass-bg mr-2">Pass</span>Verify the order tab/page Raise query functionality</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Verify the order tab/page Raise query functionality</div>
       </div>
     </div>
         <div class="collapse">
@@ -969,7 +206,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>Verify the positions tab/page Raise query functionality</div>
+        <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Verify the positions tab/page Raise query functionality</div>
       </div>
     </div>
         <div class="collapse">
@@ -1055,7 +292,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="207"><span class="badge log pass-bg mr-2">Pass</span>Verify the portfolio tab/page Raise query functionality</div>
+        <div class="node" id="40"><span class="badge log pass-bg mr-2">Pass</span>Verify the portfolio tab/page Raise query functionality</div>
       </div>
     </div>
         <div class="collapse">
@@ -1141,10 +378,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="226"><span class="badge log pass-bg mr-2">Pass</span>Verify the funds tab/page Raise query functionality</div>
+        <div class="node" id="59"><span class="badge log fail-bg mr-2">Fail</span>Verify the funds tab/page Raise query functionality</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="steps.OPFPF.user_is_on_mstock_website_login_page()">
                 <span>Given User is on Mstock Website login page.</span>
@@ -1166,59 +403,90 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.user_click_on_funds_tab()">
+              <div class="step fail-bg" title="steps.OPFPF.user_click_on_funds_tab()">
                 <span>When user click on funds tab</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Funds']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9340e5993ad0367279ec0e5689a0d90, findElement {using=xpath, value=//a[text()='Funds']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\RAHUL~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58379/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9340e5993ad0367279ec0e5689a0d90
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at pom.OPFPF_POM.fundsClick(OPFPF_POM.java:346)
+	at steps.OPFPF.user_click_on_funds_tab(OPFPF.java:260)
+	at ✽.user click on funds tab(file:///C:/Users/rahul.nityo/git/src/main/resources/onscreen/OPFPF.feature:69)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.click_on_funds_related_queries()">
+              <div class="step skip-bg" title="steps.OPFPF.click_on_funds_related_queries()">
                 <span>And click on funds related queries?</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.verify_funds_fa_qs_pop_is_opened()">
+              <div class="step skip-bg" title="steps.OPFPF.verify_funds_fa_qs_pop_is_opened()">
                 <span>Then Verify funds - FAQs pop is opened.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.user_click_on_funds_faq_question_arrow_button()">
+              <div class="step skip-bg" title="steps.OPFPF.user_click_on_funds_faq_question_arrow_button()">
                 <span>When user click on funds FAQ question arrow button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.faq_should_expand_and_link_should_be_visible(java.lang.String)">
+              <div class="step skip-bg" title="steps.OPFPF.faq_should_expand_and_link_should_be_visible(java.lang.String)">
                 <span>Then FAQ should expand and "by clicking here." link should be visible.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.user_click_on_the_by_clicking_here_link()">
+              <div class="step skip-bg" title="steps.OPFPF.user_click_on_the_by_clicking_here_link()">
                 <span>When user click on the by clicking here. link</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.query_input_text_box_should_open_and_editable()">
+              <div class="step skip-bg" title="steps.OPFPF.query_input_text_box_should_open_and_editable()">
                 <span>Then Query Input text box should open and editable.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.user_add_the_input_query_attachment_and_click_on_raise_query_button()">
+              <div class="step skip-bg" title="steps.OPFPF.user_add_the_input_query_attachment_and_click_on_raise_query_button()">
                 <span>When user add the input, query attachment and click on Raise query button.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.query_related_attachment_should_be_added_and_display_below_input_box()">
+              <div class="step skip-bg" title="steps.OPFPF.query_related_attachment_should_be_added_and_display_below_input_box()">
                 <span>Then Fund query related Attachment should be added and display below input box.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.success_pop_up_messege_should_be_display_properly_and_verified()">
+              <div class="step skip-bg" title="steps.OPFPF.success_pop_up_messege_should_be_display_properly_and_verified()">
                 <span>And Success pop up messege should be display properly and verified.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="steps.OPFPF.verify_load_time_of_the_funds_success_pop_up()">
+              <div class="step skip-bg" title="steps.OPFPF.verify_load_time_of_the_funds_success_pop_up()">
                 <span>And verify load time of the funds success pop up.</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -1227,7 +495,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="245"><span class="badge log pass-bg mr-2">Pass</span>Verify the queries are listed/store in help page</div>
+        <div class="node" id="78"><span class="badge log pass-bg mr-2">Pass</span>Verify the queries are listed/store in help page</div>
       </div>
     </div>
         <div class="collapse">
@@ -1287,26 +555,26 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">18</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@MTF</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@MTF</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1317,13 +585,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:55 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:40:33 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='63'>Verify the Margin trading facility page is loads successfully</a>
+<a href="#" class="linked" test-id='1' id='65'>When user click on funds tab</a>
 <div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the Margin trading facility page is loads successfully</span>
+<span class="badge badge-default">Login to Mstock Website.Verify the funds tab/page Raise query functionality.When user click on funds tab</span>
 </div>
 </td>
 </tr>
@@ -1331,150 +599,22 @@
 </table>
 </div>
 </li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@RaN</p>
-<p class="duration text-sm">1 tests</p>
+</ul>
 </div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@RaN</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:07 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='74'>Verify theRefer and earn page is loads successfully</a>
-<div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify theRefer and earn page is loads successfully</span>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
 </div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@MstockPage</p>
-<p class="duration text-sm">1 tests</p>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
 </div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@MstockPage</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:30 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='41'>Verify the Mstock Main Page is loads successfully</a>
-<div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the Mstock Main Page is loads successfully</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@MF</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@MF</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:31 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='96'>Verify the Mutual fund investment page is loads successfully.</a>
-<div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the Mutual fund investment page is loads successfully.</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@verifySentQuery</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@verifySentQuery</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:15:37 am</td>
-<td>
-<a href="#" class="linked" test-id='168' id='245'>Verify the queries are listed/store in help page</a>
-<div class="">
-<span class="badge badge-default">Login to Mstock Website.Verify the queries are listed/store in help page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -1499,227 +639,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:13:59 am</td>
+<td>14:39:20 pm</td>
 <td>
-<a href="#" class="linked" test-id='168' id='207'>Verify the portfolio tab/page Raise query functionality</a>
+<a href="#" class="linked" test-id='1' id='40'>Verify the portfolio tab/page Raise query functionality</a>
 <div class="">
 <span class="badge badge-default">Login to Mstock Website.Verify the portfolio tab/page Raise query functionality</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@MTFCalculator</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@MTFCalculator</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:44 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='107'>Verify the Pricing page is loads successfully</a>
-<div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the Pricing page is loads successfully</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@firsttest</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@firsttest</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:56 am</td>
-<td>
-<a href="#" class="linked" test-id='118' id='119'>Login with valid credentials</a>
-<div class="">
-<span class="badge badge-default">User Login to Mstock Website.Login with valid credentials</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@positions</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@positions</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:13:09 am</td>
-<td>
-<a href="#" class="linked" test-id='168' id='188'>Verify the positions tab/page Raise query functionality</a>
-<div class="">
-<span class="badge badge-default">Login to Mstock Website.Verify the positions tab/page Raise query functionality</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@ZeroBrokerage</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@ZeroBrokerage</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:26 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='31'>Verify the Zero Brokerage page is loads successfully</a>
-<div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the Zero Brokerage page is loads successfully</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Pricing</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Pricing</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:09:19 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='85'>Verify thePricing page is loads successfully</a>
-<div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify thePricing page is loads successfully</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@secondTest</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@secondTest</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:10:50 am</td>
-<td>
-<a href="#" class="linked" test-id='118' id='137'>Verify Have a Query module functionality</a>
-<div class="">
-<span class="badge badge-default">User Login to Mstock Website.Verify Have a Query module functionality</span>
 </div>
 </td>
 </tr>
@@ -1751,9 +675,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:12:19 am</td>
+<td>14:37:32 pm</td>
 <td>
-<a href="#" class="linked" test-id='168' id='169'>Verify the order tab/page Raise query functionality</a>
+<a href="#" class="linked" test-id='1' id='2'>Verify the order tab/page Raise query functionality</a>
 <div class="">
 <span class="badge badge-default">Login to Mstock Website.Verify the order tab/page Raise query functionality</span>
 </div>
@@ -1768,12 +692,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@SEMOpendemataccount</p>
+<p class="name">@positions</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@SEMOpendemataccount</h4>
+<h4>@positions</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1787,11 +711,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:42 am</td>
+<td>14:38:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='52'>Verify the Organic SEM Open demat account page is loads successfully</a>
+<a href="#" class="linked" test-id='1' id='21'>Verify the positions tab/page Raise query functionality</a>
 <div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the Organic SEM Open demat account page is loads successfully</span>
+<span class="badge badge-default">Login to Mstock Website.Verify the positions tab/page Raise query functionality</span>
 </div>
 </td>
 </tr>
@@ -1804,12 +728,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@DematAccountLanding</p>
+<p class="name">@verifySentQuery</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@DematAccountLanding</h4>
+<h4>@verifySentQuery</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1823,11 +747,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:07:55 am</td>
+<td>14:40:35 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Verify the demat-account Account landing page is loads successfully</a>
+<a href="#" class="linked" test-id='1' id='78'>Verify the queries are listed/store in help page</a>
 <div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the demat-account Account landing page is loads successfully</span>
+<span class="badge badge-default">Login to Mstock Website.Verify the queries are listed/store in help page</span>
 </div>
 </td>
 </tr>
@@ -1838,79 +762,7 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TradingAccount</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TradingAccount</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:08:22 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='22'>Verify the Trading Account page is loads successfully</a>
-<div class="">
-<span class="badge badge-default">Verify Trading Account Page..Verify the Trading Account page is loads successfully</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@thirdTest</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@thirdTest</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:11:49 am</td>
-<td>
-<a href="#" class="linked" test-id='118' id='155'>Verify Have a Query module functionality</a>
-<div class="">
-<span class="badge badge-default">User Login to Mstock Website.Verify Have a Query module functionality</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@funds</p>
 <p class="duration text-sm">1 tests</p>
@@ -1918,7 +770,7 @@
 <div class="test-contents d-none">
 <div class="info">
 <h4>@funds</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1929,11 +781,11 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:14:48 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:40:12 pm</td>
 <td>
-<a href="#" class="linked" test-id='168' id='226'>Verify the funds tab/page Raise query functionality</a>
+<a href="#" class="linked" test-id='1' id='59'>Verify the funds tab/page Raise query functionality</a>
 <div class="">
 <span class="badge badge-default">Login to Mstock Website.Verify the funds tab/page Raise query functionality</span>
 </div>
@@ -1956,25 +808,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 6, 2025 11:07:55 am</h3>
+<h3>Feb 10, 2025 02:37:32 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 6, 2025 11:16:03 am</h3>
+<h3>Feb 10, 2025 02:41:02 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -1990,12 +842,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -2013,9 +865,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>18</b> scenarios passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='20%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -2033,10 +885,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>181</b> steps passed</small></div>
+<div><small data-tooltip='83%'><b>57</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='1%'><b>1</b> steps failed,
+<b>10</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -2052,7 +904,7 @@
 </div></div>
 <script>
 var timeline = {
-"Verify Trading Account Page.":120.202,"User Login to Mstock Website":143.181,"Login to Mstock Website":223.679
+"Login to Mstock Website":209.648
 };
 </script>
 <div class="row">
@@ -2062,95 +914,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@MTF</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@RaN</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@MstockPage</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@MF</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@verifySentQuery</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@portfolio</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@MTFCalculator</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@firsttest</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@positions</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@ZeroBrokerage</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@Pricing</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@secondTest</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -2166,7 +930,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@SEMOpendemataccount</td>
+<td>@positions</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -2174,23 +938,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@DematAccountLanding</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TradingAccount</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@thirdTest</td>
+<td>@verifySentQuery</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -2199,11 +947,11 @@ var timeline = {
 </tr>
 <tr>
 <td>@funds</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -2214,21 +962,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 18,
-failChild: 0,
+passChild: 4,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 181,
-failGrandChild: 0,
+passGrandChild: 57,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 10,
 infoGrandChild: 0,
 eventsCount: 5,
 };

@@ -135,44 +135,48 @@ public class OPFPF {
 
 	@Then("positions FAQ should expand and by clicking here. link should be visible.")
 	public void positions_faq_should_expand_and_by_clicking_here_link_should_be_visible() {
-	     onscreen.pos_link_Visibility();
+		onscreen.link_Visibility();
 	    
 	}
 
 	@When("user click on by clicking here. link")
 	public void user_click_on_by_clicking_here_link() throws InterruptedException {
-	    onscreen.pos_by_clicking_here(); 
+		onscreen.by_clicking_here(); 
 	    
 	}
 
 	@Then("Input text box to write query should open and editable.")
 	public void input_text_box_to_write_query_should_open_and_editable() {
-	     onscreen.pos_verify_textarea();
+		onscreen.verify_textarea();
 	    
 	}
 
 	@When("user added the input query, attachment and click on Raise query button.")
 	public void user_added_the_input_query_attachment_and_click_on_raise_query_button() throws InterruptedException {
-	     onscreen.pos_enterquery();
+		  onscreen.ord_enterquery();
+		    Thread.sleep(1000);
+		    
+		    
 	    
 	}
 
 	@Then("Attachment for positions FAQ should be added and display below input box.")
 	public void attachment_for_positions_faq_should_be_added_and_display_below_input_box() throws InterruptedException {
-	     onscreen.pos_attch_file();
+		onscreen.ord_attch_file();
+	    Thread.sleep(1000);
 	    
 	}
 
 	@Then("Post click on Raised button Success pop up messege should be display and verified.")
 	public void post_click_on_raised_button_success_pop_up_messege_should_be_display_and_verified() throws InterruptedException {
-	     onscreen.pos_raise_click();
+		onscreen.ord_raise_click();
 	     
 	    
 	}
 
 	@Then("verify load time of the positions success pop up.")
 	public void verify_load_time_of_the_positions_success_pop_up() throws InterruptedException {
-	  onscreen.pos_upload_img();   
+		onscreen.ord_upload_img(); 
 	    
 	}
 	
@@ -205,43 +209,47 @@ public class OPFPF {
 
 	@Then("portfolio FAQ should expand and by clicking here. link should be visible.")
 	public void portfolio_faq_should_expand_and_by_clicking_here_link_should_be_visible() {
-	     onscreen.por_link_Visibility(); 
+		  onscreen.link_Visibility();
 	      
 	}
 
 	@When("user click on the click here. link")
 	public void user_click_on_the_click_here_link() throws InterruptedException {
-	      onscreen.por_by_clicking_here();
+	      onscreen.by_clicking_here();
 	      
 	}
 
 	@Then("Input text box for write query should open and editable.")
 	public void input_text_box_for_write_query_should_open_and_editable() {
-	      onscreen.por_verify_textarea();
+	      onscreen.verify_textarea();
 	      
 	}
 
 	@When("user added the query, attachment and click on Raise query button.")
 	public void user_added_the_query_attachment_and_click_on_raise_query_button() throws InterruptedException {
-	      onscreen.por_enterquery();
+		onscreen.ord_enterquery();
+	    Thread.sleep(1000);
+	    
+	    
 	      
 	}
 
 	@Then("Attachment for portfolio FAQ should be added and display below input box.")
 	public void attachment_for_portfolio_faq_should_be_added_and_display_below_input_box() throws InterruptedException {
 	      
-	      onscreen.por_attch_file();
+		onscreen.ord_attch_file();
+	    Thread.sleep(1000);
 	}
 
 	@Then("Post click on Raised query button Success pop up messege should be display and verified.")
 	public void post_click_on_raised_query_button_success_pop_up_messege_should_be_display_and_verified() throws InterruptedException {
-	      onscreen.por_raise_click();
+		onscreen.ord_raise_click();
 	      
 	}
 
 	@Then("verify load time of the portfolio success pop up.")
 	public void verify_load_time_of_the_portfolio_success_pop_up() throws InterruptedException {
-	      onscreen.por_upload_img();
+		onscreen.ord_upload_img();
 	      
 	}
 	
@@ -294,23 +302,26 @@ public class OPFPF {
 	public void user_add_the_input_query_attachment_and_click_on_raise_query_button() throws InterruptedException {
 	     //onscreen.funds_enterquery(); 
 		onscreen.ord_enterquery();  
+		
+	    
 	}
 
 	@Then("Fund query related Attachment should be added and display below input box.")
 	public void query_related_attachment_should_be_added_and_display_below_input_box() throws InterruptedException {
-	     onscreen.funds_attch_file(); 
+		onscreen.ord_attch_file();
+	    Thread.sleep(1000);
 	      
 	}
 
 	@Then("Success pop up messege should be display properly and verified.")
 	public void success_pop_up_messege_should_be_display_properly_and_verified() throws InterruptedException {
-	      onscreen.funds_raise_click();
+		onscreen.ord_raise_click();
 	      
 	}
 
 	@Then("verify load time of the funds success pop up.")
 	public void verify_load_time_of_the_funds_success_pop_up() throws InterruptedException {
-	     onscreen.funds_upload_img(); 
+		onscreen.ord_upload_img();
 	      
 	}
 	
@@ -339,6 +350,4 @@ public class OPFPF {
 		onscreen.getCurrentraisequiery();
 	}
 
-	
-	
 }

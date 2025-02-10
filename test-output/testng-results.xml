@@ -1,235 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-06T11:07:55 IST" name="Default suite" finished-at="2025-02-06T11:16:04 IST" duration-ms="489348">
+  <suite started-at="2025-02-10T14:37:32 IST" name="Default suite" finished-at="2025-02-10T14:41:04 IST" duration-ms="212602">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-06T11:07:55 IST" name="Default test" finished-at="2025-02-06T11:16:04 IST" duration-ms="489348">
-      <class name="runner.SEMpages_runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:07:55 IST" name="setUpClass" finished-at="2025-02-06T11:07:55 IST" duration-ms="432" status="PASS">
+    <test started-at="2025-02-10T14:37:32 IST" name="Default test" finished-at="2025-02-10T14:41:04 IST" duration-ms="212602">
+      <class name="runner.OPFPF_runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-10T14:37:32 IST" name="setUpClass" finished-at="2025-02-10T14:37:32 IST" duration-ms="503" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7402bfe7]]>
+                <![CDATA[org.testng.TestRunner@1f4d38f9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:07:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:08:22 IST" duration-ms="27170" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the demat-account Account landing page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:08:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:08:26 IST" duration-ms="4016" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Trading Account page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:08:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:08:30 IST" duration-ms="3914" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Zero Brokerage page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:08:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:08:42 IST" duration-ms="11848" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Mstock Main Page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:08:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:08:55 IST" duration-ms="12273" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Organic SEM Open demat account page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:08:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:09:07 IST" duration-ms="12014" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Margin trading facility page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:09:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:09:19 IST" duration-ms="12610" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify theRefer and earn page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:09:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:09:31 IST" duration-ms="12136" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify thePricing page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:09:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:09:44 IST" duration-ms="12490" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Mutual fund investment page is loads successfully."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:09:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:09:56 IST" duration-ms="11892" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify the Pricing page is loads successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify Trading Account Page."]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:09:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:10:50 IST" duration-ms="53851" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login with valid credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Login to Mstock Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:10:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:11:49 IST" duration-ms="59820" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Have a Query module functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Login to Mstock Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:11:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:12:19 IST" duration-ms="29513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Have a Query module functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Login to Mstock Website"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:12:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:13:09 IST" duration-ms="50634" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-10T14:37:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T14:38:28 IST" duration-ms="55883" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:13:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:13:59 IST" duration-ms="49292" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-10T14:38:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T14:39:20 IST" duration-ms="51831" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:13:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:14:48 IST" duration-ms="49651" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-10T14:39:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T14:40:12 IST" duration-ms="52251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -277,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:14:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:15:37 IST" duration-ms="48765" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-10T14:40:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T14:40:34 IST" duration-ms="22317" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -290,10 +82,55 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Funds']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9340e5993ad0367279ec0e5689a0d90, findElement {using=xpath, value=//a[text()='Funds']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\RAHUL~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58379/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9340e5993ad0367279ec0e5689a0d90]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Funds']"}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9340e5993ad0367279ec0e5689a0d90, findElement {using=xpath, value=//a[text()='Funds']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\RAHUL~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58379/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9340e5993ad0367279ec0e5689a0d90
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+at pom.OPFPF_POM.fundsClick(OPFPF_POM.java:346)
+at steps.OPFPF.user_click_on_funds_tab(OPFPF.java:260)
+at ✽.user click on funds tab(file:///C:/Users/rahul.nityo/git/src/main/resources/onscreen/OPFPF.feature:69)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:15:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-06T11:16:03 IST" duration-ms="25339" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-10T14:40:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-10T14:41:02 IST" duration-ms="27643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -309,11 +146,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.SEMpages_runner@3943a2be]" started-at="2025-02-06T11:16:03 IST" name="tearDownClass" finished-at="2025-02-06T11:16:04 IST" duration-ms="1652" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.OPFPF_runner@3943a2be]" started-at="2025-02-10T14:41:02 IST" name="tearDownClass" finished-at="2025-02-10T14:41:04 IST" duration-ms="2138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.SEMpages_runner -->
+      </class> <!-- runner.OPFPF_runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
